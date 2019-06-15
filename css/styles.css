@@ -1,10 +1,496 @@
-/* My Styles */
+/* My Awesome Styles */
 
-/* Diagnostic Styling 
-    * Change Background Color 
-    * Outline Elements
-    */
+/* Diagnostic Styling
+  * Change Background Color
+  * Outline Elements
+*/
 
-*{
-    outline: dotted 2px red;
+* {
+    /* outline: 1px dotted orange; */
+    margin: 0px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html{
+  height: 100%;
+}
+
+/* Global Styles */
+h1 {
+  font-size: 4em;
+  text-align: center;
+  color: white;
+}
+
+/* Nav Styles */
+.blueSpan{
+  margin: 0 2px;
+  color: rgba(39,170,225,1);
+  font-weight: 700;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.6rem;
+}
+
+nav h2{
+  font-weight: 100;
+  color: white;
+  font-family: 'Source Serif Pro', serif;
+}
+
+.pageIndicator{
+  color: white;
+}
+
+nav{
+  background: rgba(45,45,45,1);
+  height: 112px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.leftNav {
+  margin: 0px 0px 0px 50px;
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.rightNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 50px 0px 0px;
+}
+
+.rightNav a{
+  margin: 0px 10px;
+  font-size: 1.1rem;
+}
+
+.rightNav a:hover{
+  color: rgba(39,170,225,1);
+}
+
+a{
+  text-decoration: none;
+  color: rgba(100, 100, 100, 1);
+}
+
+.leftNav img{
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 670px) {
+
+  nav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  .leftNav{
+    width: 270px;
+    margin: 10px;
+    justify-content: flex-start;
+  }
+
+  .leftNav img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .rightNav a{
+    margin: 0px 10px;
+  }
+
+  .rightNav{
+    margin: 10px;
+  }
+}
+
+
+/* Footer Styles */
+footer{
+  background: rgba(45,45,45,1);
+  flex-shrink: 0;
+  height: 160px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footerWrapper{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0px;
+}
+
+footer img{
+  height: 25px;
+  width: 25px;
+  margin: 0px 15px 0px 0px;
+}
+
+#footerLogo {
+  height: 45px;
+  width: 45px;
+  object-fit: contain;
+  margin: 0px 0px 10px 50px;
+}
+
+footer h2{
+  color: white;
+  font-size: .9rem;
+  margin: 10px 0px 10px 50px;
+}
+
+footer div{
+  display: flex;
+  align-items: center;
+  margin: 10px 0px 4px 50px;
+}
+
+footer h3{
+  text-align: center;
+  height: 25px;
+  width: 250px;
+  border: solid 1px grey;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footerBalance{
+  margin: 0px;
+  height: 100%;
+  width: 205.45px;
+}
+
+
+
+
+/* Home Styles */
+.home{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(65,64,66,1);
+}
+
+.home #content{
+  flex: 1 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.home #homeBio{
+  margin: 50px auto 35px auto;
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 75%;
+}
+
+.home #homeBio figure{
+  width: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-right: 25px;
+}
+
+.home #homeBio figure figcaption{
+  margin-top: 6px;
+  color: rgba(255,255,255, .75);
+  font-family: 'Noto Sans', sans-serif;
+  font-style: italic;
+  text-align: left;
+  font-size: 12px;
+}
+
+.home #homeBio figure img{
+  width: 550px;
+  border: white solid 4px;
+}
+
+.home #homeBioInfo{
+  width: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.home #homeBioInfo span{
+  color: rgba(39,170,225,1);
+}
+
+.home #homeBioInfo h2{
+  color: white;
+  font-size: 52px;
+}
+
+.home #homeBioInfo p:nth-child(2){
+  margin-top: 15px;
+  color: white;
+  font-size: 24px;
+  width: 30vw;
+  line-height: 32px;
+}
+
+.home #homeBioInfo p:nth-child(3){
+  margin-top: 4px;
+  color: white;
+  font-size: 10px;
+  font-style: italic;
+  line-height: 10px;
+}
+
+.home #content h3{
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.home #content a{
+  margin: 0 auto;
+}
+
+.home #content button{
+  margin: 0px auto 35px auto;
+  color: white;
+  background-color: rgba(39,170,225,1);
+  width: 180px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 0px;
+}
+
+.home #content .tabs{
+  background: none;
+  width: 50%;
+  margin: 35px auto;
+  padding: 20px;
+  border: 2px solid rgba(39,170,225,1);
+}
+
+.home #content .tabs li{
+  list-style: none;
+  display: inline-block;
+  background: rgba(39,170,225,1);
+  padding: 20px;
+  text-align: center;
+  margin: 0px 15px 15px 0px;
+}
+
+.home #content .tabs li a{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.home #content .tabs ul{
+  padding: 0px;
+}
+
+.home #content .tabs div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+}
+
+.home #content #tab01{
+  background: url('../assets/google_d_ss.png');
+  background-size: 100%;
+  background-position: 0% 50%;
+  background-color: rgba(80,80,80,1);;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+}
+
+.home #content .tabs div a{
+  opacity: .95;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: white;
+  color: rgba(39,170,225,1);
+}
+
+.home #content #tab02{
+  background: url('../assets/inception.png');
+  background-size: 130%;
+  background-position: 50% 50%;
+  background-color: rgba(80,80,80,1);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+}
+
+.home #content #tab03{
+  background: url('../assets/mark.png');
+  background-size: 100%;
+  background-position: 35% 50%;
+  background-color: rgba(80,80,80,1);;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+}
+
+.home #content #tab04{
+  background: url('../assets/dying_l.JPG');
+  background-size: 100%;
+  background-position: 15% 50%;
+  background-color: rgba(80,80,80,1);;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+}
+
+.home #content #tab05{
+  background: url('../assets/frank.png');
+  background-size: 150%;
+  background-position: 50% 50%;
+  background-color: rgba(80,80,80,1);;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Portfolio Styles */
+.portfolio{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(65,64,66,1);
+}
+
+.portfolio #content{
+  flex: 1 0 auto;
+}
+
+.portfolio .gallery{
+  background: none;
+  width: 85%;
+  height: 80%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-rows: 500px 500px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.portfolio .chocolat-image img{
+  object-fit: cover;
+  height: 350px;
+  width: 100%;
+}
+
+.portfolio figure{
+  margin: 0px 10px;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 10px;
+  border: white solid 4px;
+}
+
+.portfolio figure figcaption{
+  color: white;
+  width: 100%;
+  font-size: 24px;
+}
+
+.portfolio .chocolat-overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(80,80,80,1);;
+    display: none;
+    opacity: .90;
+}
+
+/* About Styles */
+.about{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(65,64,66,1);
+}
+
+.about #content{
+  margin: 0 auto;
+  flex: 1 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 80%;
+}
+
+.about #content p{
+
+  margin: 0 auto;
+  color: white;
+}
+
+
+/* Contact Styles */
+.contact{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(65,64,66,1);
+}
+
+.contact #content{
+  flex: 1 0 auto;
+}
+
+.contact #content form{
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 80%;
+}
+
+.contact #content label{
+  margin: 30px 0px 10px 0px;
+  color: white;
+}
+
+.smallInput{
+  width: 250px;
+}
+
+#sendButton{
+  border: white 1px solid;
+  margin-top: 10px;
+  background: none;
+  color: white;
+  padding: 5px 15px 5px 15px;
 }
