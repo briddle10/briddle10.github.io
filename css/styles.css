@@ -28,10 +28,12 @@ h1 {
   color: rgba(39,170,225,1);
   font-weight: 700;
   font-family: 'Source Serif Pro', serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 nav h2{
+  margin: 0 0 0 10px;
+  font-size: 1.8rem;
   font-weight: 100;
   color: white;
   font-family: 'Source Serif Pro', serif;
@@ -54,9 +56,9 @@ nav{
 
 .leftNav {
   margin: 0px 0px 0px 50px;
-  width: 380px;
+  width: 450px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
 }
@@ -115,6 +117,23 @@ a{
 
   .rightNav{
     margin: 10px;
+  }
+
+}
+
+.sideNavi i{
+  font-size: 24px;
+  color: white;
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .sideNavi i{
+    display: block;
+  }
+
+  .rightNav{
+    display: none;
   }
 }
 
@@ -183,9 +202,6 @@ footer h3{
   width: 205.45px;
 }
 
-
-
-
 /* Home Styles */
 .home{
   height: 100%;
@@ -240,6 +256,7 @@ footer h3{
 }
 
 .home #homeBioInfo h2{
+  margin: 0px 0px;
   color: white;
   font-size: 52px;
 }
@@ -281,15 +298,15 @@ footer h3{
   border-radius: 0px;
 }
 
-.home #content .tabs{
+.home #content .tabss{
   background: none;
-  width: 50%;
+  width: 70%;
   margin: 35px auto;
   padding: 20px;
   border: 2px solid rgba(39,170,225,1);
 }
 
-.home #content .tabs li{
+.home #content .tabss li{
   list-style: none;
   display: inline-block;
   background: rgba(39,170,225,1);
@@ -298,18 +315,18 @@ footer h3{
   margin: 0px 15px 15px 0px;
 }
 
-.home #content .tabs li a{
+.home #content .tabss li a{
   text-decoration: none;
   color: white;
   font-size: 24px;
   text-align: center;
 }
 
-.home #content .tabs ul{
+.home #content .tabss ul{
   padding: 0px;
 }
 
-.home #content .tabs div{
+.home #content .tabss div{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,12 +344,12 @@ footer h3{
   align-items: flex-start;
 }
 
-.home #content .tabs div a{
+.home #content .tabss div a{
   opacity: .95;
   margin-top: 10px;
   border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 2.5px 8px;
+  font-size: 18px;
   background-color: white;
   color: rgba(39,170,225,1);
 }

@@ -2,11 +2,14 @@ $('h1').lettering();
 
 $('.gallery').Chocolat();
 
-$('.tabs').tabslet({
+$('.tabss').tabslet({
     autorotate: true,
     delay: 5000,
     mouseevent: 'click',
     attribute: 'href',
     animation: true
+  });
 
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
   });
